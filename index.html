@@ -37,8 +37,9 @@
                                 </li>
                             </ul>
                             <div class="button">
-                                <button type="button" class="btn btn-warning custom-btn"><i class="fa-solid fa-calendar-check"></i> Book Now</button>
+                                <button type="button" class="btn btn-warning custom-btn"  data-bs-toggle="modal" data-bs-target="#bookingModal"><i class="fa-solid fa-calendar-check"></i> Book Now</button>
                             </div>
+                            
                             <div class="social-media-links">
                                 <a href="https://www.airbnb.co.in/" class="social-link-footer">
                                     <i class="fab fa-airbnb social-icon-footer"></i>
@@ -130,7 +131,7 @@
 
                                                 </div>
                                                 <div class="button">
-                                                    <button type="button" class="btn btn-warning custom-btn"><i class="fa-solid fa-calendar-check"></i> Book Now</button>
+                                                    <button type="button" class="btn btn-warning custom-btn"  data-bs-toggle="modal" data-bs-target="#bookingModal"><i class="fa-solid fa-calendar-check"></i> Book Now</button>
                                                 </div>
                                     
                                         </div>
@@ -172,7 +173,7 @@
 
                                             </div>
                                             <div class="button">
-                                                <button type="button" class="btn btn-warning custom-btn"><i class="fa-solid fa-calendar-check"></i> Book Now</button>
+                                                <button type="button" class="btn btn-warning custom-btn"  data-bs-toggle="modal" data-bs-target="#bookingModal"><i class="fa-solid fa-calendar-check"></i> Book Now</button>
                                             </div>
                                         </div>
                                         <div class="col-sm-12 col-md-6 col-xl-6">
@@ -218,7 +219,7 @@
 
                                             </div>
                                             <div class="button">
-                                                <button type="button" class="btn btn-warning custom-btn"><i class="fa-solid fa-calendar-check"></i> Book Now</button>
+                                                <button type="button" class="btn btn-warning custom-btn"  data-bs-toggle="modal" data-bs-target="#bookingModal"><i class="fa-solid fa-calendar-check"></i> Book Now</button>
                                             </div>
                                         </div>
                                     </div>                                   
@@ -259,7 +260,7 @@
 
                                             </div>
                                             <div class="button">
-                                                <button type="button" class="btn btn-warning custom-btn"><i class="fa-solid fa-calendar-check"></i> Book Now</button>
+                                                <button type="button" class="btn btn-warning custom-btn"  data-bs-toggle="modal" data-bs-target="#bookingModal"><i class="fa-solid fa-calendar-check"></i> Book Now</button>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
@@ -774,7 +775,90 @@
                             <img src="./images/call.jpg">
                         </a>
                     </div>
-                </section>                    
+                </section>  
+                
+                <div class="modal fade" id="bookingModal" tabindex="-1">
+                    <div class="modal-dialog modal-xl modal-dialog-centered ">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Book Your Premium Stay</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="premium-container">
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label class="form-label">Name *</label>
+                                                <input type="text" class="form-control" placeholder="Enter your Full Name">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="form-label">Phone Number *</label>
+                                                <input type="tel" class="form-control" placeholder="Enter your Phone Number">
+                                            </div>
+                                        </div>
+                                        <div class="row mt-3">
+                                            <div class="col">
+                                                <label class="form-label">Email *</label>
+                                                <input type="email" class="form-control" placeholder="Enter your email address">
+                                            </div>
+                                        </div>
+                                        <div class="row mt-3">
+                                            <div class="col-md-6">
+                                                <label class="form-label">Check-IN Date *</label>
+                                                <input type="date" class="form-control">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="form-label">Check-OUT Date *</label>
+                                                <input type="date" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="row mt-3">
+                                            <div class="col">
+                                                <label class="form-label">Unit Type *</label>
+                                                <select class="form-select">
+                                                    <option>Select unit type</option>
+                                                    <option>Studio</option>
+                                                    <option>2BHK</option>
+                                                    <option>Boho 2BHK</option>
+                                                    <option>3BHK</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-3">
+                                            <div class="col-md-6">
+                                                <label class="form-label">No. of Guests *</label>
+                                                <select class="form-select">
+                                                    <option>Select guests</option>
+                                                    <option>1 Guest</option>
+                                                    <option>2 Guests</option>
+                                                    <option>3 Guests</option>
+                                                    <option>4 Guests</option>
+                                                    <option>5 Guests</option>
+                                                    <option>6 Guests</option>
+                                                    <option>7+ Guests</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-3">
+                                            <div class="col">
+                                                <label class="form-label">Message</label>
+                                                <textarea class="form-control" rows="5"
+                                                    placeholder="Any special requests or additional information..."></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="text-center mt-4">
+                                            <button type="submit"
+                                                class="btn btn-warning px-5">
+                                                Book Now
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
