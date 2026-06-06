@@ -658,4 +658,26 @@ iframe{
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
+
+.modal-content{
+    border-radius:20px;
+    border:none;
+}
+.modal-header{
+    background:#ffc107ac;
+    text-align: center;
+}
+.modal-title{
+    font-weight:700;
+}
+.modal-body{
+    padding:30px;
+}
+.modal-dialog{
+    max-width:900px;
+}
+.modal-body{
+    overflow-y: visible;
+    max-height: none;
+}
         
